@@ -1,6 +1,8 @@
 <p align="center">
-  <img src="assets/brand/banner-1500x500.png" alt="Trifini" width="100%">
+  <img src="assets/brand/trifini-emblem.png" alt="Trifini logo" width="220">
 </p>
+
+<h1 align="center">Trifini</h1>
 
 <h3 align="center">The AI life coach that actually knows you.</h3>
 
