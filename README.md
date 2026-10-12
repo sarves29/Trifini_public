@@ -35,15 +35,33 @@ Live at **[trifini.com](https://trifini.com)**.
 
 ## Screenshots
 
+Dark theme (the product default). A [light theme](assets/screenshots/light/) is available too.
+
 | | |
 |---|---|
-| ![Dashboard](assets/screenshots/dashboard.png) **Dashboard** with balance score, streaks, schedule and quick logging | ![AI Coach](assets/screenshots/ai-coach-chat.png) **AI Coach** chat with text, voice and image input |
-| ![Mood](assets/screenshots/mood.png) **Mood** with year-in-pixels and emotion tracking | ![Health](assets/screenshots/health-sleep.png) **Body**: sleep quality, stress, energy, breathing tools |
-| ![Finance](assets/screenshots/finance.png) **Money**: net worth, budgets, goals, FIRE planning | ![Habits](assets/screenshots/habits-routines.png) **Habits and routines** with strength tracking |
-| ![Gamification](assets/screenshots/gamification.png) **Quests, XP and leagues** | ![Robo Pet](assets/screenshots/robo-pet.png) **Robo Pet** that mirrors your real life |
-| ![Mobile](assets/screenshots/mobile-dashboard.png) **Mobile** responsive view | ![Login](assets/screenshots/login.png) **Sign in** with Google or email |
+| ![Dashboard](assets/screenshots/dark/dashboard.png)<br>**Dashboard**: balance score, streaks, schedule and quick logging | ![AI Coach](assets/screenshots/dark/ai-coach-chat.png)<br>**AI Coach**: personalised routine and savings guidance |
+| ![Mind](assets/screenshots/dark/mood.png)<br>**Mind**: mood tracking with year-in-pixels | ![Body](assets/screenshots/dark/health-sleep.png)<br>**Body**: sleep quality, stress, energy and breathing tools |
+| ![Money](assets/screenshots/dark/finance.png)<br>**Money**: net worth, budgets, accounts and smart insights | ![Habits and routines](assets/screenshots/dark/habits-routines.png)<br>**Habits and routines**: streaks and completion tracking |
+| ![Quests, XP and leagues](assets/screenshots/dark/gamification.png)<br>**Quests, XP and leagues**: levels, daily and weekly quests, weekly leagues | ![Robo Pet](assets/screenshots/dark/robo-pet.png)<br>**Robo Pet**: a companion that mirrors your real life |
+| ![Plans](assets/screenshots/dark/pricing.png)<br>**Plans**: Free to Premium, plus a Student plan | ![Mobile](assets/screenshots/dark/mobile-dashboard.png)<br>**Mobile**: responsive dashboard |
 
-*Screenshots are from a demo account. Names and emails are placeholders.*
+<details>
+<summary>Light theme gallery</summary>
+
+![Dashboard (light)](assets/screenshots/light/dashboard.png)
+![AI Coach (light)](assets/screenshots/light/ai-coach-chat.png)
+![Mind (light)](assets/screenshots/light/mood.png)
+![Body (light)](assets/screenshots/light/health-sleep.png)
+![Money (light)](assets/screenshots/light/finance.png)
+![Habits and routines (light)](assets/screenshots/light/habits-routines.png)
+![Quests, XP and leagues (light)](assets/screenshots/light/gamification.png)
+![Robo Pet (light)](assets/screenshots/light/robo-pet.png)
+![Plans (light)](assets/screenshots/light/pricing.png)
+![Mobile (light)](assets/screenshots/light/mobile-dashboard.png)
+
+</details>
+
+*Screenshots are from a demo account with sample data.*
 
 ## Feature tour
 
@@ -63,7 +81,7 @@ Full detail in [docs/features.md](docs/features.md).
 | **Voice** | Speech-to-text and text-to-speech across 12 languages |
 | **Offline and sync** | Installable web app, offline mode, conflict-free multi-device sync (CRDT) |
 | **14 languages** | Fully localised interface |
-| **Robo Pet** | Virtual pet whose mood, energy and bond reflect your real habits; a physical ESP32-S3-based desk companion in development. See [docs/robo-pet.md](docs/robo-pet.md) |
+| **Robo Pet** | Virtual pet whose mood, energy and bond reflect your real habits; a physical desk companion on a custom SG2002-based board in development. See [docs/robo-pet.md](docs/robo-pet.md) |
 | **Safety** | Crisis-language screening on every free-text input, resources surfaced without blocking the user, human alerting, guardrails on every AI response |
 | **Channels** | Web, Flutter app (web and Android), Telegram bot, voice, MCP server for external AI agents |
 
@@ -126,21 +144,20 @@ Deeper walkthrough: [docs/architecture.md](docs/architecture.md).
 | Messaging | Telegram bot, web push and mobile push |
 | Feature management | GrowthBook feature flags and kill switches |
 | Agent interop | Model Context Protocol (MCP) server |
-| Hardware | ESP32-S3 firmware (PlatformIO), custom enclosure and PCB design |
+| Hardware | Custom SG2002-based PCB for the desk companion, enclosure design, embedded firmware |
 | Quality | Playwright end-to-end tests, Lighthouse and axe audits, mypy, pre-commit hooks, CI pipelines |
 
 ## Plans
 
-All prices in ₹. Plans are still evolving.
+All prices in ₹ and inclusive of taxes. Annual billing saves roughly 40%.
 
-| Plan | Price | For |
+| Plan | Price | What you get |
 |---|---|---|
-| **Free** | ₹0, forever | Daily coach conversation, both check-ins, core domains, safety features, data export |
-| **Pro** | ₹299 / month | Lifetime memory, full proactivity, deeper reviews, all domains, automation |
-| **Family** | ₹499 / month | Up to 4 private coaches with an opt-in shared household layer |
-| **Enterprise** | Custom | Team wellbeing programmes with private individual coaches |
-
-New accounts start with a 7-day Pro trial, no card required.
+| **Free** | ₹0 | 5 routines, 3 reminders/day, AI chat (10/day), mood journal |
+| **Basic** | ₹99 / month | 10 routines, 20 reminders/day, AI chat (20/day), data export |
+| **Pro** (most popular) | ₹299 / month | Unlimited routines and reminders, AI chat (100/day), AI reports, analytics, data export |
+| **Premium** | ₹499 / month | Everything in Pro plus Robot Companion, Watch app and unlimited AI |
+| **Student Pro** | ₹49 / month | All Pro features at 83% off with a college ID |
 
 ## Engineering highlights
 

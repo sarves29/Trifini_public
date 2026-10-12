@@ -105,7 +105,7 @@ A companion that mirrors your real life. A virtual pet lives on web and mobile (
 
 ## Plans and billing
 
-Free, Pro, Family and Enterprise tiers, priced in ₹, with GST-aware invoicing and a 7-day Pro trial. Payments via Razorpay.
+Free, Basic (₹99), Pro (₹299), Premium (₹499) and a Student Pro plan (₹49), priced in ₹ and inclusive of taxes, with a 7-day trial and roughly 40% off annual billing. Payments via Razorpay.
 
 ## Surfaces
 

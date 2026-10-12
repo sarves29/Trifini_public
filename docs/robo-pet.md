@@ -8,9 +8,9 @@ One companion, three forms:
 |---|---|
 | **Virtual pet** | A living character on web and mobile |
 | **Floating widget** | A small companion bubble on every page and, on Android, over other apps |
-| **Physical robot** | A desk companion with a display, expressions and voice, built around an ESP32-S3 |
+| **Physical robot** | A desk companion with a round display, expressions and voice, built on a custom SG2002-based board |
 
-![Robo Pet](../assets/screenshots/robo-pet.png)
+![Robo Pet](../assets/screenshots/dark/robo-pet.png)
 
 ## The virtual pet
 
@@ -35,13 +35,14 @@ The pet is **a mirror of your real life**, not a game you have to feed to keep a
 
 A compact desk companion that brings the coach into the room.
 
-- **Hardware:** ESP32-S3 platform with a round display, speaker, microphone and servos; modular plug-in connectors so parts can be swapped without soldering
-- **Design:** custom enclosure and PCB work, bill of materials and assembly documentation
-- **Firmware:** PlatformIO project with an expression engine and 100+ planned behaviours
+- **Hardware:** a custom PCB built around the SG2002 system-on-chip (a camera-capable RISC-V/Arm SoC with on-chip AI acceleration), paired with a 1.28-inch round AMOLED display, speaker, microphone and servos
+- **Modular by design:** sensors and peripherals sit on a shared bus with plug-in connectors, so parts can be swapped without soldering
+- **Why custom silicon-level design:** earlier prototypes on a general-purpose microcontroller ran into limits on pins, display interfaces and on-device speech, which is what led to the custom board
+- **Design:** custom board schematic, enclosure and assembly documentation
+- **Experience:** 100+ planned behaviours and 26+ expressions shared with the virtual pet; the robot handles setup and routines, and expresses what the coach notices
 - **Connectivity:** an authenticated WebSocket link to the Trifini backend; the robot receives expressions and speech, and reports events
-- **Experience:** users do not configure it manually; the robot handles it and expresses what the coach notices
 
-The physical robot is in development. The virtual pet and widget are what users can try today.
+The physical robot is in development and included in the Premium plan. The virtual pet and widget are what users can try today.
 
 ## Why a companion
 

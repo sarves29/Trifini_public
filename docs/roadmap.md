@@ -15,13 +15,11 @@ Direction, not promises. Priorities shift with what users actually do.
 - **Smarter proactivity.** Predictions, best-time nudges, season-aware support
 - **Pet conversations.** Talk to the companion directly; cosmetics and personalisation
 - **Mobile.** Wider Android release, richer widgets, iOS
-- **Family.** Private coaches with an opt-in shared household layer
 - **More integrations.** Wearables, banks and brokers, calendars
 
 ## Later
 
-- **Physical robot.** Move from prototype to a small production run
-- **Workplace wellbeing.** Private individual coaches for team members, with aggregate, anonymised insight for employers only
+- **Physical robot.** Move the custom SG2002-based companion from prototype to a small production run
 - **Wearables.** A watch surface for the companion
 - **More languages and regions** beyond the current 14
 
